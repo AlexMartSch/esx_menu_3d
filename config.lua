@@ -1,18 +1,23 @@
 Config = {}
+-- EXAMPLE FOR POSIBLE CONFIG SCRIPT WITH POLYZONE
+-- This config not work!
 Config.3DScaleforms = {
     {
         id = "casinoEntrance_menu",
         menu = {
-            title = "CASINO",
-            description = "Selecciona tu próximo destino",
-            options = {
-                position    = vector3(940.15, 44.7, 79.79),
-                rotation    = vector3(-2.99, 2.5, 75.38),
-                scale       = vector3(12.0, 5.0, 8.0)
+           title    =  "Casino",
+            description = "Select your next destination",
+            options  = {
+                position = vector3(940.158, 44.79, 79.79), -- Position is a headache, I hope with the editor you can understand it faster.
+                rotation = vector3(-2.99, 2.59, 75.38), -- Rotation is a headache, I hope with the editor you can understand it faster.
+                scale = vector3(12.0, 5.0, 8.0), -- Scale: X = Horizontal; Y = Vertical; Z = ?
+                values = vector3(1.0, 1.0, 1.0), --(Some values are not yet understood, always must be 1.0)
+                heading = 1, -- WIP (Some values are not yet understood)
+                canClose = false -- WIP
             },
             elements = {
-                { label = "Ir al Casino", value = "teleport_to_casino" },
-                { label = "Ir a la Azotea", value = "teleport_to_roof"}
+                { label = "Go to CASINO", value = "teleport_to_casino" },
+                { label = "Go to ROOF", value = "teleport_to_roof"}
             }
         },
         zone = {
